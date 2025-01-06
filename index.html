@@ -4,67 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generator Kode Telebot</title>
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- SweetAlert2 -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container py-5">
-        <div class="text-center mb-4">
-            <h1 class="display-4 fw-bold text-dark">Generator Kode Telebot</h1>
-            <p class="lead text-muted">Buat kode Python untuk bot Telegram Anda hanya dalam beberapa langkah!</p>
-        </div>
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+        <h1 class="title mb-4">🚀 Generator Kode Telebot</h1>
+        <p class="subtitle mb-5">Buat kode Python bot Telegram Anda hanya dalam beberapa langkah mudah!</p>
 
-        <div class="card shadow-lg p-4 rounded-4">
+        <div class="card custom-card shadow-lg p-4">
             <form id="codeForm">
                 <div class="mb-3">
                     <label for="botToken" class="form-label">Token Bot</label>
                     <input type="text" class="form-control" id="botToken" placeholder="Masukkan token bot Anda" required>
                 </div>
-
                 <div class="mb-3">
                     <label for="command" class="form-label">Perintah</label>
                     <input type="text" class="form-control" id="command" placeholder="Misalnya: mulai" required>
                 </div>
-
                 <div class="mb-3">
                     <label for="response" class="form-label">Respons Bot</label>
                     <input type="text" class="form-control" id="response" placeholder="Misalnya: Selamat datang!" required>
                 </div>
-
                 <div class="mb-3">
-                    <label for="spamWords" class="form-label">Kata Spam</label>
+                    <label for="spamWords" class="form-label">Kata Spam (Pisahkan dengan koma)</label>
                     <input type="text" class="form-control" id="spamWords" placeholder="Misalnya: spam, iklan, promosi">
                 </div>
-
-                <div class="mb-3">
-                    <label for="adminCommand" class="form-label">Perintah Admin</label>
-                    <input type="text" class="form-control" id="adminCommand" placeholder="Misalnya: add_spam_word, show_spam_words">
-                </div>
-
-                <button type="button" class="btn btn-primary w-100" onclick="generateCode()">Buat Kode</button>
+                <button type="button" class="btn custom-btn w-100" onclick="generateCode()">Buat Kode</button>
             </form>
         </div>
 
-        <div class="mt-5">
-            <h3 class="text-center mb-3">Kode Python yang Dihasilkan:</h3>
-            <textarea id="generatedCode" class="form-control" rows="10" readonly></textarea>
-        </div>
-
-        <div class="mt-3">
-            <button type="button" class="btn btn-success w-100" onclick="copyToClipboard()">Salin Kode</button>
-            <a id="downloadLink" href="#" class="btn btn-info w-100 mt-2" download="telebot.py">Unduh Kode Python</a>
+        <div class="output mt-5">
+            <h3 class="output-title text-center">Hasil Kode Python:</h3>
+            <textarea id="generatedCode" class="output-box form-control" rows="10" readonly></textarea>
+            <button class="btn btn-dark mt-3 w-100" onclick="copyToClipboard()">Salin Kode</button>
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
-      </html>
+</html>
