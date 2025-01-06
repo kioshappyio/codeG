@@ -1,81 +1,55 @@
 body {
-    background: linear-gradient(135deg, #6d52ff, #62d9f3);
-    font-family: 'Arial', sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
     margin: 0;
-    color: white;
+    padding: 0;
 }
 
-h1, h3 {
-    font-family: 'Roboto', sans-serif;
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.card {
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.custom-card {
+    border-radius: 15px;
+    background: #fff;
     width: 100%;
     max-width: 500px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.9);
 }
 
-textarea {
-    font-family: monospace;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-textarea:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.sweet-button {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    color: white;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 30px;
-    transition: transform 0.3s ease-in-out, background 0.5s ease;
+.custom-btn {
+    background: linear-gradient(45deg, #42e695, #3bb2b8);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
     border: none;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
 }
 
-.sweet-button:hover {
-    transform: scale(1.1);
-    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+.custom-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #3bb2b8, #42e695);
 }
 
-.form-control {
+.output-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    border: 1px solid #ddd;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    font-family: monospace;
+    color: #333;
 }
 
-.form-control:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-color: #6d52ff;
+.output-title {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
-
-.btn-gradient {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    border-radius: 30px;
-    border: none;
-    transition: background 0.5s ease;
-}
-
-.btn-gradient:hover {
-    background: linear-gradient(45deg, #feb47b, #ff7e5f);
-}
-
-@media (max-width: 576px) {
-    .card {
-        width: 90%;
-    }
-    .form-control {
-        font-size: 14px;
-    }
-                                }
